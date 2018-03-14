@@ -1,0 +1,198 @@
+.movie_time{
+	width: 100%;
+	height:60px;
+	margin-top:82px;
+	line-height: 60px; 
+	background: #47464a;
+}
+.movie_time nav{
+	margin: auto;
+	width:393px; 
+	position: relative;
+}
+.movie_time nav>a{
+	font-size:16px;
+	color:#f34d41; 
+	margin-right:80px; 
+}
+.movie_time nav>a:nth-child(3){
+	margin-right: 0;
+}
+/*分类箭头*/
+.movie_time nav>a.arrow{
+	display: block;
+	width: 0;
+	height: 0;
+	border:10px solid transparent;
+	border-bottom-color:white;
+	position: absolute; 
+	bottom: 0;
+	left:25px;  
+}
+.search_item_box{
+	width:1120px;
+	height: 200px;
+	margin: 30px auto;
+	border:1px solid #e5e5e5; 
+}
+.search_item_box .search_item{
+	padding-top:13px; 
+	width: 1075px;
+	margin: auto;
+	height: 60px;
+	border-bottom:1px dashed #ccc; 
+}
+.search_item_box .search_item li{
+   float: left;
+   height: 25px;
+   font-size: 14px;
+   text-align: center;
+   line-height: 25px;
+   margin-right:10px; 
+   border-radius:31%;
+}
+.search_item_box .search_item li a{
+    padding: 0px 6px !important;
+	height: 25px;
+	display: inline-block;
+}
+.search_item_box .search_item li:nth-child(1){
+   width:40px;
+   height:40px;
+   color: #999999;
+   margin-right:20px; 
+}
+.search_item_box .all_bg{
+	background: #f34d41;
+	border-radius:32%;
+	color: white;
+}
+.search_item_box .search_item:last-child{
+	border: 0;
+}
+.content{
+	width:1120px;
+	overflow: hidden; 
+	margin: 0 auto;
+}
+.content .movie_sort>a{
+	display:inline-block;
+	width:15px;
+	height: 15px;
+	border-radius: 50%;
+	margin-right: 109px;
+	font-size: 14px;
+	box-shadow:0 0 2px #ccc;
+}
+a.active{
+	background:url(../img/maoyan17.png) no-repeat;
+	box-shadow:0 0 2px #fff; 
+}
+ 
+.content .movie_sort>a::after{
+    content: "按热门排序";
+    display: inline-block;
+    width:100px;
+    position: relative;
+    left:22px;
+    top:-2px; 
+}
+.content .movie_sort>a:nth-child(2)::after{
+	content: "按时间排序";
+}
+.content .movie_sort>a:nth-child(3)::after{
+	content: "按评价排序";
+}
+.result{
+	width: 100%;
+	overflow: hidden;
+}
+.result img{
+	width:160px;
+	height: 220px;
+}
+.result dl{
+	width:160px;
+	text-align:center;
+	margin-top: 20px;
+	position: relative;
+	cursor: pointer;
+	float: left;
+	margin-right:31px;  
+}
+/*.result dl dt{
+	overflow: hidden;
+}*/
+.result dl img{
+	transition: all .5s;
+}
+.result dl:hover img{
+	transform: scale(1.07);
+}
+.result dl:nth-child(6n){
+	margin-right:0; 
+}
+.result dl:hover dd:nth-of-type(1){
+    text-decoration: underline;
+}
+.result dl dd:nth-of-type(1){
+	margin-top:5px; 
+}
+.result dl dd:nth-of-type(2){
+	font-style: italic;
+	color:#ffb400;
+	font-size: 14px;
+	margin-top: 5px; 
+}
+.result dl dd:nth-of-type(2)::first-letter{
+    font-size:18px; 
+} 
+.result dl dd.pay{
+	width:35px;
+	height:18px;
+	line-height: 18px;
+	font-size: 14px;
+	color: white;
+	position: absolute;
+	background: #f34d41; 
+	top:194px;
+	right:5px; 
+	cursor: pointer;   
+}
+
+.page_count{
+	width:450px;
+	margin:35px auto 93px auto;
+	overflow: hidden;
+}
+.page_count li{
+	float: left;
+	margin-right:15px; 
+}
+.page_count li>a:hover{	 
+	background: #ef4238;
+	color: white; 
+	border:1px solid #fff;
+}
+.page_count li a.active{
+	background: #ef4238;
+	color: white; 
+	border:1px solid #ef4238;
+}
+.page_count li>a{
+    display: block;
+	width:33px;
+	height: 33px;
+	text-align: center;
+	line-height: 33px;
+	border:1px solid #ccc; 
+}
+.page_count li:nth-of-type(7)>a,
+.page_count li:nth-of-type(8) a{
+	width: 60px;
+}
+.page_count li:nth-of-type(8){
+	margin-right:0; 
+}
+
+

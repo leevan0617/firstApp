@@ -1,0 +1,107 @@
+header{
+	width: 100%;
+	height:59px;
+	margin-bottom: 40px;
+	line-height: 59px;
+	border-bottom: 2px solid #e5342a; 
+}
+ .warp{
+	width:1000px;
+	margin:auto;	   
+}
+header .warp img{
+	vertical-align:middle;
+}
+
+form input{
+	width: 260px;
+	height: 32px;
+	outline: none;
+	font-size: 14px;
+	text-indent: 5px;
+}
+form .name{
+	display: inline-block;
+	width:105px;
+	text-align: right; 
+	margin-right:15px;
+	font-size:14px; 
+}
+input[type="text"],
+input[type="password"]{
+	border: 1px solid #aaa
+}
+input[type="text"]:focus,
+input[type="password"]:focus{
+	border:1px solid #f76120; 
+}
+form input+span{
+    font-size:12px;
+    color: #666666; 
+}
+/* form input[type="text"]+span::before{
+	content:"";
+	display: inline-block;
+	width:19px;
+	height:19px;
+	top:4px;
+	margin-right: 2px;
+	position:relative;
+    background:url(../img/maoyan28.png) no-repeat;
+} */
+.get_code{
+	width:139px;
+	height: 22px;
+	font-size: 12px;
+	margin:10px 0 10px 125px;  
+}
+.password_strength{
+   margin: 6px 125px -23px; 
+   display: none;
+}
+input[type="password"]:focus +.password_strength {
+   display: block;
+}
+.password_strength span{
+    display: inline-block;
+    width:86px;
+    height:20px;
+    color: white;
+    line-height: 20px;
+    text-align: center;
+    background: #eeeeee;
+    font-size: 12px; 
+}
+.password_strength .strength_h{
+	background:#ff8800;
+}
+input[type="password"]{
+	margin-top:10px;  
+}
+.btn{
+	margin-top: 15px;
+	background: #ea3d42;
+	color: white;
+	font-weight: bold;
+	font-size: 16px;
+	border: 0;
+	margin-left:125px; 
+}
+.btn +a{
+	display: block;
+	color: red;
+	font-size: 13px;
+    margin-left:125px; 
+    margin-top: 15px;
+    text-decoration: none;
+}
+footer{
+	width:100%;
+	height:250px;
+	padding-top:26px;
+	text-align: center;
+	font-size: 12px;
+	color: #999999;
+	margin-top: 40px;
+	border-top: 1px solid #ccc;	   
+}

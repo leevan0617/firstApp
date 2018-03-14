@@ -1,0 +1,112 @@
+a{
+	text-decoration: none;
+	color: black;
+}
+body{
+	font-family: "微软雅黑";
+}
+.container{
+	width: 880px;
+	height:437px;
+	margin: 40px auto;
+}
+.container img{
+    float: left;
+}
+.container form{
+	width:270px;
+	float: right;
+	position: relative;
+	font-size: 14px;
+	margin-top:140px;  
+}
+form .dr_code{
+	font-size:12px;
+	color: #666666;
+	float: right;
+	 
+}
+form .dr_code::after{
+	content: "";
+	display: inline-block;
+	width:13px;
+	height:16px;
+	position: relative;
+	top:3px;
+	margin-left: 3px;
+	background:url(../img/maoyan16.png) no-repeat; 
+}
+.error_info{
+	position: absolute;
+	right: -105px;
+	top:33px; 
+	display: none;
+	color: red;
+	font-size: 12px;
+}
+input{
+	width:268px;
+	height:35px; 
+	outline: none;
+	box-sizing: border-box;
+}
+input[type="text"]{
+	margin:5px 0 20px;
+	font-size:14px;
+	color:gray;
+	padding-left:30px;
+	border: 1px solid #aaa;
+	background: url(../img/user1.png) no-repeat 5px center; 
+	background-size:22px;  
+}
+input[type="password"]{
+	font-size:14px;
+	padding-left:30px;
+	border: 1px solid #aaa;
+	background: url(../img/suo.png) no-repeat 5px center; 
+	background-size:22px;  
+}
+input[type="text"]:focus,
+input[type="password"]:focus{
+	border-color: #f76120;
+}
+input[type="checkbox"]{
+	width:15px;	
+	height: 15px;
+	margin-top:10px;
+	top:3px; 
+	cursor: pointer;
+	position: relative; 
+}
+input[type="checkbox"] +label{
+	font-size: 12px;
+	cursor: pointer;
+}
+ .forget{
+ 	font-size: 12px;
+ 	color: red;
+ 	float: right;
+ 	margin-top: 13px;
+ 	margin-right: 5px;
+ }
+ input[type="submit"]{
+ 	background:#e3292e; 
+ 	 border:none;
+ 	 margin-top:20px; 
+ 	 font-size:16px;
+ 	 color: white; 
+ 	 letter-spacing :3px; 
+ 	 font-weight: bold;
+ 	 border-radius: 3px;
+ 	 margin-bottom:8px; 
+ }
+ input[type="submit"]+span{
+ 	font-size: 14px;
+ }
+ .register{
+ 	font-size: 14px;
+ 	color: red;
+ }
+ form a:hover{
+    text-decoration: underline;
+ }

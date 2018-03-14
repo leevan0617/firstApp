@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+	<title>欢迎注册</title>
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="css/register.css">
+	<style>
+	    .password_strength .state{
+			transition: all .7s;
+			width:0;			
+		}
+		.state>span{
+			background: transparent;
+			text-align: center !important;
+		}
+		.password_strength span{
+			text-align: left;
+			position: relative;
+		}
+	</style>
+</head>
+<body>
+    <header>
+    	<div class="warp">
+    		<img src="img/index6.png">
+    	</div>
+    </header> 
+	<form class="warp" method="post" action="/usersinfo/addUser">
+		<span class="name">手机号</span>
+		<input type="text" name="phone"id="phone">
+		<span class="nameInfo info"></span><br/>
+		<input type="submit" name="" value="免费获取动态验证码" class="get_code"><br/>
+		<span class="name">短信动态码</span>
+		<input type="text" name="" class="code">
+		<span class="codeInfo info"></span><br/>
+		<span class="name">创建密码</span>
+		<input type="password" name="pwd">
+		<span class="pasdInfo info"></span><br/>
+		<p class="password_strength">
+		    <span><span class="state" style="width:0"><span class="">弱</span></span></span>
+		    <span><span class="state"  ><span class="">中</span></span></span>
+		    <span><span class="state"><span class="">强</span></span></span>
+		</p><br/>  
+        <span class="name">确定密码</span>
+		<input type="password" name="" id="confirm_pawd">
+		<span class="confirm_info info"></span><br/>
+        <input type="submit" name="" value="同意以下协议并注册" class="btn" id="submit">
+        <a href="#2">《 美团网协议 》</a>
+	</form>
+	<footer>
+		<p>&copy;meituan.com 京ICP证070189号 京公安网备1110227378号</p>
+	</footer>
+	<script src="js/jquery-1.12.4.min.js"></script>
+	<script src="js/reg.js"></script>
+</body>
+</html>

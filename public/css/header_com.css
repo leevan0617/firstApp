@@ -1,0 +1,209 @@
+ul,li,dl,dd,dt,p,h3,h4,h5{
+	margin:0;
+	padding:0;
+}
+li{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+	color: black;
+}
+.warp{
+	width:1200px;
+	margin: auto;
+	overflow:hidden;
+}
+body{
+	font-family:"Microsoft YaHei";
+}
+header{
+	width:100%;
+	height:82px;
+	position:fixed;
+	top:0;
+	background: white;
+	z-index:2;
+	line-height: 82px;
+	box-shadow: 0 2px 2px gray;
+}
+header nav li{
+	float: left;
+	cursor: pointer;
+}
+header nav li:nth-child(1)>img{
+    vertical-align: middle;
+}
+header nav li:nth-child(2){
+   margin-left:23px;
+   margin-right: 50px;
+   border-left: 1px solid #fff;
+   border-right:  1px solid #fff;
+  
+}
+header nav li:nth-child(2)>a{
+   margin-left: 10px;
+   margin-right: 10px;
+}
+ i.arrow{
+	display: inline-block;
+    width:11px;
+    height:8px;
+    background: url(../img/maoyan05.png) no-repeat ;
+    position: relative;
+    top: -1px;
+    transition: all .3s;
+}
+header nav li:nth-child(2) .sub_item{
+    width: 300px;
+    height: 200px;
+    position: absolute;
+    bottom:-200px;
+    z-index: 3;
+    color: white;
+    line-height: 22px;
+    overflow-y:scroll;
+    background:white;
+    color:#999; 
+    font-size:15px;
+    display: none;
+}
+header nav li:nth-child(2) .sub_item li{
+	float: left;
+	margin:0 15px 0 0 ; 
+}
+header nav li:nth-child(2) .sub_item>ul{
+	overflow: hidden;
+}
+.sub_item h5{
+	font-size:15px;
+	height: 50px;
+	font-weight: normal;
+	padding-left: 20px;
+	line-height: 50px;
+	border-bottom:1px solid #ccc;  
+}
+.sub_item li:nth-child(1){
+	width:30px;
+	height:40px;
+	margin-right: -10px;
+	margin-left:10px !important;
+	text-align: center;  
+}
+.sub_item li:hover{
+	color: red;
+}
+header nav>ul>li:nth-child(2):hover{
+	border-left: 1px solid #ccc;
+	border-right:  1px solid #ccc;
+}
+header nav li:nth-child(2):hover .sub_item{
+	display: block;
+}
+header nav li:nth-child(2):hover a{
+	color: red;
+}
+header nav li:nth-child(2):hover i,
+header nav li:nth-child(7):hover i
+{
+	transform: rotate(180deg);
+	top: -2px;
+	cursor: pointer;
+}
+header nav li.color_foucs {
+	background:#ef4238;	 
+}
+header nav li.color_foucs>a{
+	color:white;
+}
+header nav li:nth-child(3)>a,
+header nav li:nth-child(4)>a,
+header nav li:nth-child(5)>a,
+header nav li:nth-child(6)>a{
+	display: block;
+	width:81px;
+	text-align: center;
+	height:82px;
+}
+header nav li:nth-child(3)>a:hover,
+header nav li:nth-child(4)>a:hover,
+header nav li:nth-child(5)>a:hover,
+header nav li:nth-child(6)>a:hover{
+	color: #ef4238;
+}
+header nav li.color_foucs>a:hover{
+	color:white;
+}
+li.user_info{
+	width:70px;    
+	position: relative;
+	border-left:1px solid white; 
+	border-right:1px solid white; 
+}
+li.user_info img{
+	margin-left:8px;  
+}
+li.user_info:hover .sub_login{
+    display: block;
+}
+li.user_info:hover{
+	border-color: #ccc; 
+}
+.sub_login{
+	width: 100%;
+	height: 55px;
+	display: none;
+	background:white; 
+	line-height:25px; 
+}
+.sub_login a{
+	text-align: center;
+	 font-size:14px; 
+	display: block;
+	color: #aaa;
+}
+.sub_login a:hover{
+	color: red;
+	text-decoration: underline;
+}
+header nav li:nth-child(7){
+	float: right;
+}
+header nav li:nth-child(7)>img{
+	width: 37px;
+	vertical-align: middle;
+}
+header nav li:nth-child(8){
+	float: right; 
+	margin-right: 24px; 
+}
+header nav li:nth-child(8) form{
+	height:82px;
+	position: relative;
+}
+header nav li:nth-child(8) input[type="text"]{	
+	width:220px;
+	height: 38px;
+	margin-top:22px;
+	padding-right:40px; 
+	border: 1px solid #ccc;
+	border-radius: 50px;
+	outline: none;
+	padding-left: 20px;
+	border-right:0; 
+	font-size:14px;
+	background:#faf8fa ;
+}
+header nav li:nth-child(8) input[type="submit"]{
+	width:41px;
+	height:41px;
+	border-radius: 50%;
+	background:url(../img/maoyan03.png) no-repeat center;
+	border: 0;
+	position: absolute;
+	outline: none;
+	top:22px;
+	right:0px; 
+}
+ 
+
